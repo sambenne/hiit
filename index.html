@@ -3,17 +3,14 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>HIIT</title>
-
-
 </head>
 <body>
-	<audio id="time" src="/sounds/time-beep.mp3" type="audio/mpeg" ></audio>
-	<audio id="end" src="/sounds/end-beep.mp3" type="audio/mpeg" ></audio>
+	<audio id="time" src="sounds/time-beep.mp3" type="audio/mpeg" ></audio>
+	<audio id="end" src="sounds/end-beep.mp3" type="audio/mpeg" ></audio>
 
 	<button onclick="playAudio('time')">Play time</button>
 	<button onclick="playAudio('end')">Play end</button>
 
-	<script src="phonegap.js"></script>
 	<script type="text/javascript">
 		function playAudio(id) {
 			var audioElement = document.getElementById(id);
@@ -28,5 +25,6 @@
 			my_media.play();
 		}
 	</script>
+	<script src="phonegap.js"></script>
 </body>
 </html>
