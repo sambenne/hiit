@@ -18,8 +18,8 @@
 		<preference name="phonegap-version" value="3.6.3" />
 		<preference name="splash-screen" value="splash" />
 
+		<gap:plugin name="org.apache.cordova.media" version="0.2.13" />
 		<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
-		<gap:plugin name="org.apache.cordova.media" />
 
 		<icon src="icon.png" />
 	</widget>
