@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.eat-and-sleep" versionCode="10" version="1.0.0" >
+		<!-- versionCode is optional and Android only -->
+
+		<name>HIIT</name>
+
+		<description>
+			HIIT Application
+		</description>
+
+		<author href="https://sam-benne.co.uk" email="bennettsst@gmail.com">
+			Sam Bennett
+		</author>
+
+		<!--<gap:platform name="ios" />-->
+		<gap:platform name="android" />
+
+		<preference name="phonegap-version" value="3.6.3" />
+		<preference name="splash-screen" value="splash" />
+
+		<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
+		<gap:plugin name="org.apache.cordova.media" />
+
+		<icon src="icon.png" />
+	</widget>

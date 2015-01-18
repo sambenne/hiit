@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>HIIT</title>
+
+
+</head>
+<body>
+	<audio id="time" src="/sounds/time-beep.mp3" type="audio/mpeg" ></audio>
+	<audio id="end" src="/sounds/end-beep.mp3" type="audio/mpeg" ></audio>
+
+	<button onclick="playAudio('time')">Play time</button>
+	<button onclick="playAudio('end')">Play end</button>
+
+	<script type="text/javascript">
+		function playAudio(id) {
+			var audioElement = document.getElementById(id);
+			var url = audioElement.getAttribute('src');
+			var my_media = new Media(url,
+					// success callback
+					function () { console.log("playAudio():Audio Success"); },
+					// error callback
+					function (err) { console.log("playAudio():Audio Error: " + err); }
+			);
+			// Play audio
+			my_media.play();
+		}
+	</script>
+</body>
+</html>
